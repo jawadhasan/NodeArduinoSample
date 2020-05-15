@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jawadhasan/NodeArduinoSample#readme",
   "dependencies": {
+    "lowdb": "^1.0.0",
     "serialport": "^9.0.0"
   }
 }
