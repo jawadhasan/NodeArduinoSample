@@ -1,0 +1,22 @@
+{
+  "name": "nodearduinosample",
+  "version": "1.0.0",
+  "description": "Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jawadhasan/NodeArduinoSample.git"
+  },
+  "author": "Jawad Hasan Shani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jawadhasan/NodeArduinoSample/issues"
+  },
+  "homepage": "https://github.com/jawadhasan/NodeArduinoSample#readme",
+  "dependencies": {
+    "serialport": "^9.0.0"
+  }
+}
