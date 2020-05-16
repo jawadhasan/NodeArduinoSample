@@ -7,9 +7,11 @@ const port = new SerialPort('COM3', { baudRate: 9600 })
 
 const parser = new Readline("\r\n");
 port.pipe(parser);
+let counter = 0;
 
 //Event binding. This event will be called when data arrives
 parser.on('data', line => {
+  counter++;
   console.log(`> ${line}`);
   if(isNaN(line) || line > 1023) return;
 
@@ -18,5 +20,6 @@ parser.on('data', line => {
      db.get('sensorData')
      .push(streamObject)
      .write();
+     console.log(`counter: ${counter}`)
 });
 //port.write('ROBOT POWER ON\n')
